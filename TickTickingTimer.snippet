@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Tick Ticking Timer</Title>
+            <Author>Ali Emre Küçükkurt</Author>
+            <Description>Boilerplate Timer Tick</Description>
+            <Shortcut>tttimer</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[if($name$Timer > 0){
+                    $name$Timer -= Time.deltaTime;
+                    if($name$Timer <= $name$Time){
+                        $code$
+                    }
+                }]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <Default>my</Default>
+                </Literal>
+                <Literal>
+                    <ID>code</ID>
+                    <Default>Debug.Log("BOOM");</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
